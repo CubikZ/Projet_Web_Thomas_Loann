@@ -1,0 +1,11 @@
+body
+{
+    background: url("images/background.jpg") fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (:-webkit-full-screen:)
+{
+
+}

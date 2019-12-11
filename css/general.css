@@ -5,7 +5,90 @@ body
     background-repeat: no-repeat;
 }
 
-@media (:-webkit-full-screen:)
+
+/*En tête */
+header
 {
+    position: fixed;
+    top:0;
+    width:95%;
+    height:10%;
+
+
+}
+
+header menu
+{
+    display:flex;
+    flex-direction: center;
+    justify-content: space-between;
+}
+
+header input
+{
+    width:50%;
+    height:5em;
+}
+header button
+{
+    margin-left:-15%;
+    width:20%;
+}
+/* Principal */
+
+main
+{
+    width:80%;
+    height:1000px;
+    margin: auto;
+    background-color:white;
+
+
+}
+
+#articles
+{
+    background-color:#00AAE4;
+    height:70%;
+}
+
+
+
+
+
+/*Pied de la page */
+footer
+{
+    position:fixed;
+    top:90%;
+    left:95%;
+    /*Cercle : */
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #00C12B;
+}
+
+footer i
+{
+    margin-top:0.5em;
+    margin-left:0.4em;
+    color:white;
+    
+}
+
+@media (max-width:718px)
+{
+    footer
+    {
+        position:fixed;
+        top:90%;
+        left:85%;
+        
+
+    }
+
+
+
 
 }

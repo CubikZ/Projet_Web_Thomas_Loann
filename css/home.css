@@ -1,0 +1,16 @@
+/*Pour la presentation (bienvenue du site*/
+
+aside
+{
+    margin-top:5em;
+    font-size:5em;
+    background-color:#9FCBD3;
+    
+}
+
+#promo_noel
+{
+    background-color:#EA0037;
+    height:30%;
+    text-align:center;
+}

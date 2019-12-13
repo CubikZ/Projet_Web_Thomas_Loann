@@ -2,15 +2,23 @@
 
 aside
 {
-    margin-top:5em;
-    font-size:5em;
-    background-color:#9FCBD3;
     
+    margin:auto;
+    height:20em;
+    width:100%;
+    font-size:1em;
+    background-image: url("images/snow.jpg");
+    border-top: thin solid black;
+    border-bottom: thin solid black;
 }
 
 #promo_noel
 {
-    background-color:#EA0037;
+    background-color:#EA4630;
     height:30%;
     text-align:center;
+    border: 4mm ridge #F8B229;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
 }

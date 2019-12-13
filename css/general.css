@@ -1,3 +1,9 @@
+
+*
+{
+    top:0;
+    margin:0;
+}
 body
 {
     background: url("images/background.jpg") fixed;
@@ -9,19 +15,16 @@ body
 /*En tête */
 header
 {
-    position: fixed;
     top:0;
-    width:95%;
+    width:100%;
     height:10%;
-
-
-}
-
-header menu
-{
     display:flex;
     flex-direction: center;
     justify-content: space-between;
+    background-color:#F8B229;
+    border-bottom: thin solid black;
+
+
 }
 
 header input
@@ -34,22 +37,46 @@ header button
     margin-left:-15%;
     width:20%;
 }
+/*Menu*/
+menu
+{
+    display:flex;
+    width:97%;
+    height:3em;
+    background-image:url("images/snow.jpg");
+    justify-content: center;
+}
+
+menu button
+{
+    width:18%;
+    height:100%;
+
+}
+menu button:nth-child(1)
+{
+margin-left:-4em;
+}
 /* Principal */
 
 main
 {
     width:80%;
-    height:1000px;
+    height:50em;
     margin: auto;
-    background-color:white;
+    margin-top:5em;
+    background-color:#146B3A;
+    border: 4mm ridge #F8B229;
+    opacity:0.9;
 
 
 }
 
 #articles
 {
-    background-color:#00AAE4;
-    height:70%;
+    background-color:#146B3A;
+    height:100%;
+    text-align:center;
 }
 
 

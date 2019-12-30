@@ -1,24 +1,218 @@
 /*Pour la presentation (bienvenue du site*/
+aside {
+  margin: auto;
+  width: 100%;
+  height: 20vw;
 
-aside
-{
-    
-    margin:auto;
-    height:20em;
-    width:100%;
-    font-size:1em;
-    background-image: url("images/snow.jpg");
-    border-top: thin solid black;
-    border-bottom: thin solid black;
+  font-size: 1em;
+  background-image: url("images/banniere.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-top: thin solid black;
 }
 
-#promo_noel
-{
-    background-color:#EA4630;
-    height:30%;
-    text-align:center;
-    border: 4mm ridge #F8B229;
-    border-top-style:none;
-    border-left-style:none;
-    border-right-style:none;
+#offre {
+  background-color: #ea4630;
+  height: auto;
+  text-align: center;
+  border: 4mm ridge #f8b229;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  display: flex;
+  flex-direction: column;
+}
+/*Tableau des meilleur promo de noel*/
+#offre table tr:nth-of-type(1)/*Le premier élément*/
+ {
+  font-size: 6vw;
+  font-family: Impact, sans-serif;
+  background-color: white;
+  color: green;
+}
+
+/*Bloc promos*/
+#offre table tr td {
+  width: 30%;
+  height: 20em;
+}
+/*Premiere promo*/
+#offre table tr td:nth-child(1) {
+  background-image: url("images/articles/gaming/pc.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20em;
+}
+/*photo sapin*/
+#offre table tr td:nth-child(2) {
+  background-image: url("images/articles/noel.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20em;
+}
+/*2eme promo*/
+#offre table tr td:nth-child(3) {
+  background-image: url("images/articles/maison/frigo.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20em;
+}
+
+/*Premier article
+
+
+/*Le tableau d'article*/
+main #article table tr:nth-child(1) /*Le premier élément*/
+ {
+  font-size: 3em;
+  font-family: Impact, sans-serif;
+}
+main #article table tr:nth-child(2n+2)/*Tout les titres*/
+ {
+  font-size: 2em;
+  background-color: #146b3a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+main table tr:nth-child(1) th {
+  border: none;
+}
+main table th {
+  border-top: medium solid black;
+  border-bottom: medium solid black;
+}
+
+main #article table img {
+  height: auto;
+  width: 30%;
+}
+
+/*Background articles*/
+#article table td {
+  background-color: white;
+  height: 20em;
+}
+/*Vetements*/
+#article table tr:nth-child(3) td:nth-child(1) {
+  background-image: url("images/articles/vetement/chaussure.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(3) td:nth-child(2) {
+  background-image: url("images/articles/vetement/jean.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(3) td:nth-child(3) {
+  background-image: url("images/articles/vetement/tshirt.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*jardinage*/
+#article table tr:nth-child(5) td:nth-child(1) {
+  background-image: url("images/articles/jardinage/pelle.png");
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(5) td:nth-child(2) {
+  background-image: url("images/articles/jardinage/rateau.png");
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(5) td:nth-child(3) {
+  background-image: url("images/articles/jardinage/tondeuse.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Maison*/
+#article table tr:nth-child(7) td:nth-child(1) {
+  background-image: url("images/articles/maison/four.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(7) td:nth-child(2) {
+  background-image: url("images/articles/maison/frigo.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(7) td:nth-child(3) {
+  background-image: url("images/articles/maison/hotte.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*info*/
+#article table tr:nth-child(9) td:nth-child(1) {
+  background-image: url("images/articles/informatique/airpods.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(9) td:nth-child(2) {
+  background-image: url("images/articles/informatique/ampoule.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(9) td:nth-child(3) {
+  background-image: url("images/articles/informatique/telephone.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*gaming*/
+#article table tr:nth-child(11) td:nth-child(1) {
+  background-image: url("images/articles/gaming/carte.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(11) td:nth-child(2) {
+  background-image: url("images/articles/gaming/pc.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article table tr:nth-child(11) td:nth-child(3) {
+  background-image: url("images/articles/gaming/souris.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1200px) {
+  aside {
+    background-image: url("images/banniere2.png");
+    height: 50vw;
+  }
+  #offre tr:nth-child(2) /*Selection du deuxieme tr*/
+ {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #offre table tr td {
+    width: 100%;
+  }
+
+  #article tr>td/*Toutes les images*/
+ {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -1,0 +1,80 @@
+main {
+  font-family: impact;
+}
+
+main div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+  font-family: monospace;
+}
+
+main div div {
+  width: 10em;
+  height: 10em;
+  background-color: white;
+}
+.quantite {
+  flex-direction: column;
+  justify-content: center;
+}
+.quantite h3 + h5 {
+  color: green;
+  font-size: 2em;
+}
+.quantite h3 + h5 + h5 {
+  color: red;
+  font-size: 2em;
+}
+#tondeuse {
+  background-image: url("images/articles/jardinage/tondeuse.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#tshirt {
+  background-image: url("images/articles/vetement/tshirt.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#frigo {
+  background-image: url("images/articles/maison/frigo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+main button {
+  width: 80%;
+  height: 3em;
+  font-family: impact, sans-serif;
+}
+main button:nth-child(1) {
+  background-color: green;
+}
+main button:nth-child(2) {
+  width: 80%;
+  height: 3em;
+}
+main h4 {
+  width: 50%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  main div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quantite {
+    flex-direction: column;
+    height: 5%;
+  }
+  .changer {
+    flex-direction: row;
+    width: auto;
+  }
+
+  main div p {
+    margin-top: 2em;
+  }
+}

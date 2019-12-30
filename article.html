@@ -1,80 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/article.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--POur pouvoir mettre des icones-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--POur pouvoir mettre des icones-->
+
+    <link rel="icon" type="image/png" href="css/images/logo1.png" />
 
     <title>Believe</title>
-    <!-- mettre une icone -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!--Contient logo + barre de recherche-->
-            <img src="css/images/logo.png" alt="panier">
-        <!-- Barre de recherche-->
-        <input placeholder="Voulez-vous la simpliciter ?">
-        <button><i class="fa fa-search fa-2x"></i></button>
-        <!-- -->
-
-        <img src="css/images/panier.png" alt="panier">
-        
-        
-
-
-
-
-        
-
-
+      <!--Contient logo + barre de recherche-->
+      <a href="home.html">
+        <div>
+          <!--Logo-->
+        </div>
+      </a>
+      <!-- Barre de recherche + bouton-->
+      <form method="POST" action="recherche.html">
+        <input placeholder="Que voulez-vous rechercher ?" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <a href="panier.html" title="Voir mon panier">
+        <div id="panier"></div>
+      </a>
     </header>
 
-    <menu>
-        <button>Vêtement</button>
-        <button>Jardinage</button>
-        <button>Maison & Cuisine</button>
-        <button>High Tech</button>
-        <button>Gaming</button>
-     </menu>
+    <nav>
+      <button onclick="window.location.href = 'recherche.html';">
+        Vêtements
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Jardinage
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Maison & Cuisine
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Informatique
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">Gaming</button>
+    </nav>
 
     <main>
-        <div id="articles">
-            <h3>
-                Tous les articles
-            </h3>
+      <div id="article">
+        <div id="image"></div>
+
+        <article>
+          <div>
+            <h1>PC Gamer</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, itaque. Hic mollitia, beatae obcaecati quos corporis blanditiis impedit maxime quis repellat cum error veritatis aperiam ullam eos molestiae dolorem quibusdam.
+              Un pc digne des plus grands joueurs, pouvant faire fonctionner
+              n'importe quel jeu avec facilité !
             </p>
+            <ul>
+              <li>Processeur : Intel Core i5 9600KF (3.7 GHz)</li>
+              <li>Carte mère : Gigabyte Z390 GAMING X</li>
+              <li>Mémoire : DDR4 HyperX Fury, 16 Go, 3200 MHz, CAS 18</li>
+              <li>Ventirad : Be Quiet ! Dark Rock 4</li>
+              <li>Carte graphique : KFA2 GeForce RTX 2070 SUPER-EX, 8 Go</li>
+              <li>Disques : SSD 250 Go, HDD : 2 To</li>
+            </ul>
+          </div>
+
+          <div id="codepromo">
+            <input id="case" type="checkbox" />
+            <div id="reducimg"></div>
+            <p>Coupons de réduction de 50%</p>
+          </div>
+        </article>
+      </div>
+
+      <button onclick="window.location.href = 'panier.html';">
+        Ajouter au panier
+      </button>
+      <div id="commentaires">
+        <div class="utilisateur">
+          <img
+            src="css/images/articles/utilisateurs/elise.jpg"
+            alt="photo Elise Abeth"
+          />
+          <div class="text">
+            <h3>Elise Abeth</h3>
+            <p>
+              Le pc que j'ai commandé est arrivé deux jours avant la date
+              prévue, pour une livraison gratuite et un prix aussi competitif,
+              c'est incroyable !
+            </p>
+          </div>
         </div>
-        
+        <div class="utilisateur">
+          <img
+            src="css/images/articles/utilisateurs/natha.jpg"
+            alt="photo Nathanaël Zanzi"
+          />
+          <div class="text">
+            <h3>Nathanaël Zanzi</h3>
+            <p>
+              Mon fils voulait un pc pour noël, je l'ai pris pour lui faire
+              plaisir et il en est très content ! Merci Believe !
+            </p>
+          </div>
+        </div>
+        <div class="utilisateur">
+          <img
+            src="css/images/articles/utilisateurs/mathieu.jpg"
+            alt="photo Jean Clanche"
+          />
+          <div class="text">
+            <h3>Jean Clanche</h3>
+            <p>Pc arrivé, monté, prêt à être utilisé , rien à changer !</p>
+          </div>
+        </div>
+        <h2>Ajouter un commentaire:</h2>
+        <form>
+          <input placeholder="Nom" />
+          <input placeholder="Prénom" />
+          <textarea placeholder="Description"></textarea>
+          <button onclick="window.location.href = 'article.html';">
+            Ajouter un commentaire
+          </button>
+        </form>
+      </div>
 
-
-
-        
-            
-
-
-
+      <a href="article.html">
+        <div id="suggestion">
+          <div></div>
+          <div></div>
+        </div>
+      </a>
     </main>
 
-
-
-    <footer>
+    <a href="presentation.html" title="Contact">
+      <footer>
         <i class="fa fa-envelope fa-2x"></i>
-        
-        
-
-
-    </footer>
-    
-
-    
-</body>
-
+      </footer>
+    </a>
+  </body>
 </html>
-

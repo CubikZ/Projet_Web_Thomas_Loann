@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/commander.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--POur pouvoir mettre des icones-->
+    <link rel="icon" type="image/png" href="css/images/logo1.png" />
+    <title>Believe</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Contient logo + barre de recherche-->
+      <a href="home.html" title="Accueil">
+        <div>
+          <!--Logo-->
+        </div>
+      </a>
+    </header>
+
+    <main>
+      <form method="POST" action="home.html">
+        <h1>Coordonnées</h1>
+        <label>Nom* <input /></label>
+        <label>Prénom*<input /></label>
+        <label>Adresse* <input /></label>
+        <label>Ville* <input /></label>
+        <label>Code postal* <input /></label>
+        <label>Indication sur le bâtiment, n°étage... <input /></label>
+        <h1>Moyens de payements</h1>
+        <div id="nomCarte">
+          <label
+            ><img src="css/images/mastercard.png" alt="Logo Mastercard"/><input
+              name="carte"
+              type="radio"
+          /></label>
+
+          <label
+            ><img src="css/images/paypal.png" alt="Logo Paypal"/><input
+              name="carte"
+              type="radio"
+          /></label>
+
+          <label
+            ><img src="css/images/visa.png" alt="Logo Visa"/><input
+              name="carte"
+              type="radio"
+          /></label>
+        </div>
+        <label>N°carte*<input /></label>
+        <label>Date expiration*<input /></label>
+        <label>CVC*<input /></label>
+
+        <h1>Moyen de livraison</h1>
+        <label
+          >Livraison classique gratuite (sous 3 jours)<input
+            name="livraison"
+            type="radio"
+        /></label>
+        <label
+          >Livraison rapide 5€ (sous 1 jour)<input name="livraison" type="radio"
+        /></label>
+        <label
+          >Livraison Believe **(livraison dans la journée)<input
+            name="livraison"
+            type="radio"
+        /></label>
+
+        <p>* = champs obligatoire</p>
+        <p>** = Livraison Believe gratuite pour l'ouverture du site !</p>
+        <button>Retour</button>
+        <button>Continuer</button>
+      </form>
+    </main>
+
+    <footer>
+      <i class="fa fa-envelope fa-2x"></i>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/panier.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--POur pouvoir mettre des icones-->
+    <link rel="icon" type="image/png" href="css/images/logo1.png" />
+    <title>Believe</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Contient logo + barre de recherche-->
+      <a href="home.html">
+        <div> 
+          <!--Logo-->
+        </div>
+        </a>
+      <!-- Barre de recherche + bouton-->
+      <form method="POST" action="recherche.html">
+        <input placeholder="Que voulez-vous rechercher ?" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <a href="panier.html" title="Voir mon panier">
+        <div id="panier">
+        
+        </div>
+        </a>
+      
+    </header>
+
+    <nav>
+      <button onclick="window.location.href = 'recherche.html';">Vêtement</button>
+      <button onclick="window.location.href = 'recherche.html';">Jardinage</button>
+      <button onclick="window.location.href = 'recherche.html';">Maison & Cuisine</button>
+      <button onclick="window.location.href = 'recherche.html';">Informatique</button>
+      <button onclick="window.location.href = 'recherche.html';">Gaming</button>
+      
+    </nav>
+    <main>
+        <h3>Vous avez actuellement 3 articles dans votre panier :</h3>
+        <h3>Voulez-vous passer à l'achat ?</h3>
+        <div>
+            <div class="quantite">
+                <h3>Quantité : 1</h3>
+                <h5>+</h5>
+                <h5>-</h5> 
+                 
+                  
+            </div>
+
+            <a href="article.html"><div id="tondeuse"></div></a><!--image-->
+            <p>Tondeuse à gazon Bosh - ARM 32</p>
+        </div>
+        <div>
+            <div class="quantite">
+                <h3>Quantité : 1</h3>
+                
+                <h5>+</h5>
+                <h5>-</h5>       
+            </div>
+            <a href="article.html"><div id="tshirt"></div></a><!--image-->
+            <p>T-shirt taille: M - Gucci</p>
+        </div>
+        <div>
+            <div class="quantite">
+                <h3>Quantité : 1</h3>
+                
+                <h5>+</h5>
+                <h5>-</h5>
+                </div>   
+                <a href="article.html"><div id="frigo"></div></a><!--image-->
+              <p>Frigo américain connectée</p>
+        </div>
+      <div>
+        <h4>Prix total: 319,99 €</h4>
+        <h4>Vous économisez: 3 289,99‬ €</h4>
+        <!--J'ai utiliser un on click event car avec la balise a, cela fait tout planter-->
+        <button onclick="window.location.href = 'commander.html';">Passer à l'achat</button>
+        <button onclick="window.location.href = 'home.html';">Acheter d'autres articles</button>
+      </div>
+
+      
+    </main>
+
+    <footer>
+      <i class="fa fa-envelope fa-2x"></i>
+    </footer>
+  </body>
+</html>

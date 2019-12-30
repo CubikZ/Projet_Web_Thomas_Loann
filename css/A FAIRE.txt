@@ -1,0 +1,47 @@
+---------------photomontage----------------
+-Faire logo du site (le B)
+-Faire le titre du site design (Believe)
+-Faire un panier
+-Faire une image de promotion pour la pub au debut du site
+-Trouver des images les articles (3 vetements/ 3 jardinage / 3Maison & cuisine/3 informatique/3 gaming) si possible rajouter la promotion (ex: 500euros (barré) --> 10euros)
+-Dans les images des articles rajouter le nom dessus
+-------------Page web General-------------------
+-Changer l'icone du site web
+-Voir pour les polices
+-Voir pour les couleurs
+-Voir git lab et tout avec les branches(pb)
+
+-RESPONSIVE DESIGN
+
+------------Page web Home ( page de garde)----------------------
+-rajouter Liens
+-voir polices
+
+
+-----------Page article-----------------------
+-Voir avec thomas
+-Checker le positionnement
+-Afficher l'ancien prix barré / le nouveau prix après la reduc 
+-On peut rajouter une checkbox (pour un coupon de 50%)?
+-Description du produit
+
+
+---------Page Contact (Qui somme nous)---------------------------
+-rajouter description
+-rajouter liens
+-voir polices
+
+--------Page Recherche------------------------
+-A Faire
+)resultat de recherche et doit afficher une liste d'article
+)bouton page suivante, page precedante
+
+----------Page panier------------------------
+-A faire
+)Afficher les articles pour pouvoir les commander
+---------Page COMMANDER------------------------
+A faire
+-Mettre les coordonnées, carte de payement et tout pour pouvoir commander
+-formulaire (form)
+https://www.w3schools.com/icons/fontawesome_icons_payment.asp
+

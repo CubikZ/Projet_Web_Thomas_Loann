@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--POur pouvoir mettre des icones-->
+    <link rel="icon" type="image/png" href="css/images/logo1.png" />
+    <title>Believe</title>
+    <!-- mettre une icone -->
+  </head>
+
+  <body>
+    <header>
+      <!--Contient logo + barre de recherche-->
+      <a href="home.html" title="Accueil">
+        <div>
+          <!--Logo-->
+        </div>
+      </a>
+      <!-- Barre de recherche + bouton-->
+      <form method="POST" action="recherche.html">
+        <input placeholder="Que voulez-vous rechercher ?" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+
+      <a href="panier.html" title="Voir mon panier">
+        <div id="panier"></div>
+      </a>
+    </header>
+
+    <nav>
+      <button onclick="window.location.href = 'recherche.html';">
+        Vêtement
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Jardinage
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Maison & Cuisine
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Informatique
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">Gaming</button>
+    </nav>
+
+    <main>
+      <div id="avatars">
+        <div class="carte">
+          <div id="thomas"></div>
+          <div class="information">
+            <p><b>Martinez Thomas</b></p>
+            <p>Developpeur Web et Imagerie</p>
+            <p>DUT-informatique</p>
+          </div>
+        </div>
+        <div class="carte">
+          <div id="loann"></div>
+          <div class="information">
+            <p><b>Mahdar-Recorbet Loann</b></p>
+            <p>Developpeur Web</p>
+            <p>DUT-informatique</p>
+          </div>
+        </div>
+      </div>
+      <p>
+        Nous sommes des étudiants en DUT informatique et avons créé dans le
+        cadre d'un projet universitaire un site marchant pour les plus démunies.
+        C'est d'ici que nous est venue l'idée de Believe !
+      </p>
+      <p><b>Believe it or not, it is all real !</b></p>
+
+      <div id="commentaire">
+        <p><b>Commentaires:</b></p>
+        <p>
+          <b>Lily Pade:</b> Excellent site internet, fiabilité à toute épreuve !
+          Je le conseille, 5 étoiles !
+        </p>
+        <p>
+          <b>Silvain Poirier:</b> Un SAV sans soucis et un community manager au
+          top !
+        </p>
+        <p></p>
+        <p>
+          <b>Aria Resto:</b> Le site est facile d'appréhension, je n'ai eu aucun
+          soucis à me déplacer.
+        </p>
+        <p>
+          <b>Mathieu Charaire</b> Franchement, beaucoup d'émotions, beaucoup de
+          choix, pour moi c'est un grand oui.
+        </p>
+      </div>
+
+      <p></p>
+      <div id="Contact">
+        <h2>Vous avez des questions ? contactez-nous :</h2>
+        <form>
+          <input placeholder="Email" />
+          <input placeholder="Objet" />
+          <textarea placeholder="Description"></textarea>
+          <button>Envoyer</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

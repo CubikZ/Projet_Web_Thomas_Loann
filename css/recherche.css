@@ -1,0 +1,40 @@
+main {
+  font-family: impact;
+}
+main div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+  font-family: Impact;
+}
+main div div {
+  width: 10em;
+  height: 10em;
+  background-color: white;
+}
+#airpods {
+  background-image: url("images/articles/informatique/airpods.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#ampoule {
+  background-image: url("images/articles/informatique/ampoule.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#samsung {
+  background-image: url("images/articles/informatique/telephone.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  main div {
+    flex-direction: column;
+    text-align: center;
+  }
+  main div p {
+    margin-top: 2em;
+  }
+}

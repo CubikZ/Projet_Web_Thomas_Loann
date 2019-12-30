@@ -1,0 +1,78 @@
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: green;
+}
+#avatars {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  /*Impossible à centrer avec justify-contents/align items*/
+  margin-left: 30%;
+  align-items: center;
+  height: auto;
+}
+#avatars .carte {
+  width: 100%;
+  height: 20em;
+  border: medium solid black;
+  background-color: white;
+}
+#thomas {
+  height: 75%;
+  background-image: url("images/avatars/thomas.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-bottom: medium solid black;
+}
+#loann {
+  height: 75%;
+  background-image: url("images/avatars/loann.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-bottom: medium solid black;
+}
+
+main p {
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+}
+#commentaire {
+  text-align: left;
+  margin-top: 1em;
+}
+#commentaire p {
+  margin-top: 1em;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  border-top: 4mm ridge #f8b229;
+  background-color: green;
+  color: white;
+  font-family: monospace, sans-serif;
+}
+main form textarea {
+  height: 18em;
+  resize: none;
+}
+main form button {
+  height: 5em;
+}
+@media (max-width: 718px) {
+  #avatars {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 718px) and (max-width: 1200px) {
+  #avatars {
+    width: 50%;
+  }
+}

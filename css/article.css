@@ -1,0 +1,180 @@
+main {
+  height: auto;
+}
+
+#article {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 50%;
+}
+#image /*bloc de l'image*/
+ {
+  display: block;
+  width: 50%;
+  background-image: url("images/articles/gaming/pc.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#article article    /*Bloc du text et du coupon*/
+ {
+  width: 50%;
+  font-family: monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#article h1 {
+  font-family: impact, sans-serif;
+  font-size: 3em;
+  color: black;
+  text-shadow: 0 0 0.2em #f87, 0 0 0.2em #f87;
+}
+#article article ul {
+  list-style: none;
+}
+
+#article article div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  background-color: #146b3a;
+}
+
+#article article div:nth-child(1)   /*le text*/
+ {
+  width: 100%;
+  height: 80%;
+}
+#codepromo  /*le code promo*/
+ {
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  width: 100%;
+  height: 5em;
+  align-items: center;
+}
+#case {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+#reducimg {
+  height: 100%;
+  width: 40%;
+  background-image: url("images/articles/coupon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#reducimg + p {
+  width: 20%;
+}
+
+main button {
+  margin-top: 0.5em;
+  width: 100%;
+  height: 20%;
+  font-family: impact, sans-serif;
+  font-size: 3em;
+}
+
+#commentaires {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  justify-content: center;
+  width: 99%;
+}
+.utilisateur {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em;
+  margin-top: 0.5em;
+  border: thin solid black;
+}
+.utilisateur img {
+  display: inline-block;
+  width: 5em;
+}
+.text {
+  background-color: green;
+  width: 100%;
+}
+.text p {
+  font-family: monospace, sans-serif;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+}
+textarea {
+  resize: none;
+  height: 10em;
+}
+
+#suggestion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border: 2mm ridge #f8b229;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+#suggestion div {
+  width: 30%;
+  height: 15em;
+}
+#suggestion div:nth-child(1) {
+  background-image: url("images/articles/gaming/carte.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#suggestion div:nth-child(2) {
+  background-image: url("images/articles/gaming/souris.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1200px) {
+  main {
+    height: auto;
+    flex-direction: column;
+  }
+  #article,
+  #suggestion {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #article div:nth-child(1) {
+    width: 100%;
+    height: 20em;
+  }
+  #article article {
+    width: 100%;
+    height: auto;
+  }
+
+  #suggestion {
+    align-items: center;
+  }
+  #suggestion div:nth-child(1) {
+    width: 100%;
+  }
+  #suggestion div:nth-child(2) {
+    width: 100%;
+  }
+  main button:nth-child(2) {
+    font-size: 3em;
+    height: 2em;
+  }
+}

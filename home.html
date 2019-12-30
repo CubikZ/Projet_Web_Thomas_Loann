@@ -1,91 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--POur pouvoir mettre des icones-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--POur pouvoir mettre des icones-->
+    <link rel="icon" type="image/png" href="css/images/logo1.png" />
 
     <title>Believe</title>
-    <!-- mettre une icone -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!--Contient logo + barre de recherche-->
-            <img src="css/images/logo.png" alt="panier">
-        <!-- Barre de recherche-->
-        <input placeholder="Voulez-vous la simpliciter ?">
-        <button>Rechercher</button>
-        <!-- -->
-
-        <img src="css/images/panier.png" alt="panier">
-        
-        
-
-
-
-
-        
-
-
+      <!--Contient logo + barre de recherche-->
+      <a href="home.html" title="Accueil">
+        <div>
+          <!--Logo-->
+        </div>
+      </a>
+      <!-- Barre de recherche + bouton-->
+      <form method="POST" action="recherche.html">
+        <input placeholder="Que voulez-vous rechercher ?" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <!-- -->
+      <a href="panier.html" title="Voir mon panier">
+        <div id="panier"></div>
+      </a>
     </header>
 
-    <menu>
-        <button>Vêtement</button>
-        <button>Jardinage</button>
-        <button>Maison & Cuisine</button>
-        <button>High Tech</button>
-        <button>Gaming</button>
-     </menu>
+    <nav>
+      <button onclick="window.location.href = 'recherche.html';">
+        Vêtement
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Jardinage
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Maison & Cuisine
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">
+        Informatique
+      </button>
+      <button onclick="window.location.href = 'recherche.html';">Gaming</button>
+    </nav>
 
     <aside>
-            <h1>Believe</h1>
-            <h2>Tes souhaits se réalisent !</h2>
-            <!-- mettre une promotion (50% sur tout le site) comme topachat-->
+      <!-- mettre une promotion (50% sur tout le site) comme topachat-->
     </aside>
 
     <main>
-        <div id="promo_noel" href="#main">
-            <p>Best of Promotion de Noël</p>
+      <a href="article.html">
+        <div id="offre">
+          <table>
+            <tr>
+              <th colspan="3">Les meilleurs promos de noël</th>
+            </tr>
 
+            <tr>
+              <td>&nbsp;</td>
+              <!--On est obliger pour mettres les images-->
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
         </div>
 
-        <div id="articles">
-            <h3>
-                Tous les articles
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, itaque. Hic mollitia, beatae obcaecati quos corporis blanditiis impedit maxime quis repellat cum error veritatis aperiam ullam eos molestiae dolorem quibusdam.
-            </p>
+        <div id="article">
+          <table>
+            <tr>
+              <th colspan="3">Tout les articles</th>
+            </tr>
+
+            <tr>
+              <th colspan="3">Vêtements</th>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <!--Obligation de mettre un char au sinon le background prend tout les blocs-->
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th colspan="3">Jardinage</th>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th colspan="3">Maison & Cuisine</th>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th colspan="3">Informatique</th>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th colspan="3">Gaming</th>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
         </div>
-        
-
-
-
-        
-            
-
-
-
+      </a>
     </main>
 
-
-
-    <footer>
+    <a href="presentation.html" title="Contact">
+      <footer>
         <i class="fa fa-envelope fa-2x"></i>
-        
-        
-
-
-    </footer>
-    
-
-    
-</body>
-
+      </footer>
+    </a>
+  </body>
 </html>
-

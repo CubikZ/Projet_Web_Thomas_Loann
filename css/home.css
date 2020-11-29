@@ -94,6 +94,7 @@ main #article table img {
 #article table td {
   background-color: white;
   height: 20em;
+  width: 50em;
 }
 /*Vetements*/
 #article table tr:nth-child(3) td:nth-child(1) {
